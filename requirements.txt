@@ -3,3 +3,5 @@ numpy
 faiss-cpu
 sentence_transformers
 python-dotenv
+unstructured
+pypdf

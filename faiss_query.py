@@ -47,16 +47,16 @@ def demo_search():
 
 def main():
     # --- interactive version ---
-    # while True:
-    #     q = input("\nAsk anything (or 'exit'): ").strip()
-    #     if q.lower() in {"exit", "quit"}:
-    #         break
-    #     for rank, doc in enumerate(search(q), 1):
-    #         print(f"\n#{rank}  (L2={doc['distance']:.4f})  {doc['title']}")
-    #         print(f"   → {doc['text'][:160]}…")
+    while True:
+        q = input("\nAsk anything (or 'exit'): ").strip()
+        if q.lower() in {"exit", "quit"}:
+            break
+        for rank, doc in enumerate(search(q), 1):
+            print(f"\n#{rank}  (L2={doc['distance']:.4f})  {doc['title']}")
+            print(f"   → {doc['text'][:160]}…")
 
     # --- non‑interactive quick test ---
-    demo_search()
+    # demo_search()
 
 if __name__ == "__main__":
     main()

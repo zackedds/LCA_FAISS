@@ -5,7 +5,7 @@ from sentence_transformers import SentenceTransformer
 import faiss
 
 # Load data
-with open("pdf_doc.json", "r") as f:
+with open("auto_pdf_doc.json", "r") as f:
     docs = json.load(f)
 
 # Extract texts
